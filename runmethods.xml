@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="run methods suite">
+    <test name="run methods 1">
+        <classes>
+            <class name="com.techproed.smoketest.Day12_NegativeTest">
+                <methods>
+                    <!--                    RUN ONLY INVALID ID         -->
+                    <!--                    include -> just run only this method named invalidID, birkaç tane yazabilirsin-->
+                    <include name="invalidID"/>
+                </methods>
+            </class>
+            <!-- Adding another class tag to configure new classes-->
+            <class name="com.techproed.tests.AlertTest">
+                <methods>
+                    <!--        run all methods except acceptAlert-->
+                    <!--        exclude -> run all other methods except acceptAlert method in Day07_AlertTest birkaç tane yazabilirsin-->
+                    <exclude name="acceptAlert"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

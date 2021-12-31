@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="parallel cross browser suite" parallel="classes" thread-count="2" verbose="2">
+    <test name="Testing on Chrome">
+        <!--        THIS TEST CASES WILL RUN ON Chrome-->
+        <parameter name="browser" value="chrome"></parameter>
+        <packages>
+            <package name="com.techproed.crossbrowsertests"></package>
+        </packages>
+    </test>
+    <test name="Testing on firefox">
+        <!--        THIS TEST CASES WILL RUN ON Firefox-->
+        <parameter name="browser" value="firefox"></parameter>
+        <packages>
+            <package name="com.techproed.crossbrowsertests"></package>
+        </packages>
+    </test>
+</suite>
+
+

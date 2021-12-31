@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="run classes" parallel="tests" thread-count="2">
+    <test name="parallel3">
+        <classes>
+            <class name="com.techproed.tests.AlertTest"></class>
+            <class name="com.techproed.tests.Day09_ActionsClass1"></class>
+            <class name="com.techproed.tests.Day13_FaceLogin"></class>
+        </classes>
+    </test>
+    
+    
+    <test name="parallel4">
+        <classes>
+            <class name="com.techproed.tests.Day09_ActionsClass2"></class>
+        </classes>
+    </test>
+</suite>
